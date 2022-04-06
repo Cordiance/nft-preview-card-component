@@ -1,0 +1,17 @@
+$softblue:hsl(215, 51%, 70%);
+$cyan:hsl(178, 100%, 50%);
+
+$verydarkbluemain:hsl(217, 54%, 11%);
+$verydarkbluecard:hsl(216, 50%, 16%);
+$verydarkblueline:hsl(215, 32%, 27%);
+$white:hsl(0, 0%, 100%);
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+@media screen and (min-width:375px) {}
