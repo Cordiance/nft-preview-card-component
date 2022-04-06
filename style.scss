@@ -11,7 +11,7 @@ body {
     font-size: 18px;
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
-    margin: 15vh auto;
+    margin: 20vh auto;
     background-color: $verydarkbluemain;
 
     // Card container
@@ -121,7 +121,7 @@ body {
     }
 }
 
-@media screen and (min-width:375px) {
+@media screen and (max-width:375px) {
     body {
         margin: 5vh auto;
     }
