@@ -3,5 +3,106 @@ body {
   font-size: 18px;
   font-family: 'Outfit', sans-serif;
   font-weight: 300;
+  margin: 15vh auto;
+  background-color: #0d192b;
+}
+
+body .container .row .card {
+  background-color: #14253d;
+  border-radius: 1em;
+}
+
+body .container .row .card .img-top img {
+  border-radius: 0.5rem;
+}
+
+body .container .row .card .img-top::after {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  bottom: 16.6rem;
+  left: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+body .container .row .card .img-top img:hover {
+  opacity: 0.3;
+}
+
+body .container .row .card .img-top:hover::after,
+body .container .row .card .img-top:active::after {
+  border-radius: 0.5rem;
+  background: rgba(0, 255, 247, 0.7) url("/images/icon-view.svg") center no-repeat;
+}
+
+body .container .row .card .card-body .card-title a {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+body .container .row .card .card-body .card-title a:hover {
+  color: #00fff7;
+}
+
+body .container .row .card .card-body .card-text {
+  color: #8bacda;
+}
+
+body .container .row .card .card-body .float-left {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #00fff7;
+}
+
+body .container .row .card .card-body .float-right {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #8bacda;
+}
+
+body .container .row .card .card-body img.img-author {
+  width: 2rem;
+  border: 1px solid white;
+  border-radius: 100px;
+}
+
+body .container .row .card .card-body .author {
+  font-size: 1rem;
+  color: #8bacda;
+}
+
+body .container .row .card .card-body .author a {
+  color: white;
+  text-decoration: none;
+}
+
+body .container .row .card .card-body .author a:hover {
+  color: #00fff7;
+}
+
+body .container .row .card hr {
+  border-color: #2f415b;
+}
+
+body .attribution {
+  font-size: 0.8rem;
+  margin: 0.5rem auto;
+  text-align: center;
+  color: #8bacda;
+}
+
+body .attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    margin: 5vh auto;
+  }
+  .container {
+    min-width: 375px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

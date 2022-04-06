@@ -12,36 +12,63 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
-  Equilibrium #3429
+  <!-- Card container -->
+  <main class="container">
 
-  Our Equilibrium collection promotes balance and calm.
+    <div class="row justify-content-center">
 
-  0.041 ETH
-  3 days left
+      <!-- Card -->
+      <div class="card shadow-lg" style="width: 22rem; height:33em">
 
-  Creation of Jules Wyvern
+        <!-- Top image for card-->
+        <div class="img-top pt-4 pl-4 pr-4">
+          <img src="/images/image-equilibrium.jpg" class="card-img-top" alt="Image of Equilibrium">
+        </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <!-- Card body with text -->
+        <div class="card-body pt-4 pl-4 pr-4 pb-0">
+          <h5 class="card-title"><a href="#">Equilibrium #3429</a></h5>
+          <p class="card-text pt-2">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <span class="float-left">
+            <img class="pb-1 pr-1" src="/images/icon-ethereum.svg" alt="Ethereum icon">
+            0.041 ETH</span>
+          <span class="float-right">
+            <img class="pb-1 pr-1" src="/images/icon-clock.svg" alt="Clock icon">
+            3 days left</span>
+        </div>
+
+        <hr class="mt-0 ml-3 mr-3 mb-2 p-0">
+
+        <!-- author -->
+        <div class="card-body p-2 pt-3 ml-3 mr-3">
+          <span class="pb-2 pr-2">
+            <img class="img-author" src="/images/image-avatar.png" alt="Picture of author">
+          </span>
+          <span class="author pt-2">Creation of <a href="#">Jules Wyvern</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Cordiance">Cordiance</a>.
+    </div>
+
+  </main>
+
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
