@@ -1,6 +1,5 @@
 $softblue:hsl(215, 51%, 70%);
 $cyan:hsl(178, 100%, 50%);
-
 $verydarkbluemain:hsl(217, 54%, 11%);
 $verydarkbluecard:hsl(216, 50%, 16%);
 $verydarkblueline:hsl(215, 32%, 27%);
@@ -12,6 +11,108 @@ body {
     font-size: 18px;
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
+    margin: 15vh auto;
+    background-color: $verydarkbluemain;
+
+    // Card container
+    .container {
+        .row {
+
+            //Card
+            .card {
+                background-color: $verydarkbluecard;
+                border-radius: 1em;
+
+                // Top image for card
+                .img-top img {
+                    border-radius: 0.5rem;
+                }
+
+                // hover effect for image
+                .img-top::after {
+                    content: "";
+                    position: absolute;
+                    top: 1.5rem;
+                    right: 1.5rem;
+                    bottom: 16.6rem;
+                    left: 1.5rem;
+                    border-radius: 0.5rem;
+                }
+
+                .img-top img:hover {
+                    opacity: 0.3;
+                }
+
+                .img-top:hover::after,
+                .img-top:active::after {
+                    border-radius: 0.5rem;
+                    background: hsla(178, 100%, 50%, 0.7) url("/images/icon-view.svg") center no-repeat;
+                }
+
+                // card body with text
+                .card-body {
+                    .card-title {
+                        a {
+                            color: $white;
+                            text-decoration: none;
+                        }
+
+                        a:hover {
+                            color: $cyan;
+                        }
+                    }
+
+                    .card-text {
+                        color: $softblue;
+                    }
+
+                    .float-left {
+                        color: $cyan;
+                    }
+
+                    .float-right {
+                        color: $softblue;
+                    }
+
+                    img.img-author {
+                        width: 2rem;
+                        border: 1px solid $white;
+                        border-radius: 100px;
+                    }
+
+                    // author
+                    .author {
+                        color: $softblue;
+
+                        a {
+                            color: $white;
+                            text-decoration: none;
+                        }
+
+                        a:hover {
+                            color: $cyan;
+                        }
+                    }
+                }
+
+                hr {
+                    border-color: $verydarkblueline;
+                }
+            }
+        }
+    }
+
+    .attribution {
+        font-size: 0.8rem;
+        margin: 0.5rem auto;
+        text-align: center;
+        color: $softblue;
+    }
+
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
 }
 
 @media screen and (min-width:375px) {}
